@@ -17,7 +17,7 @@ jobs:
         
 ######### EDIT:
           package_list: plasma
-          release_tag: 6.5.2-0
+          release_tag: 6.5.6-1
           ## path to source repo
           source_url: https://github.com/manjaro/plasma-6.5.git
           source_folder: plasma-6.5
