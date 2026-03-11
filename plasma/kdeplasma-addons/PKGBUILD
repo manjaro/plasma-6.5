@@ -55,7 +55,7 @@ optdepends=('networkmanager-qt: POTD wallpaper'
             'quota-tools: disk quota applet')
 groups=(plasma)
 source=(https://download.kde.org/stable/plasma/$_dirver/$pkgname-$pkgver.tar.xz{,.sig})
-sha256sums=('935b1ca2890cab03ef9bf0cacc8fb5a6044fa688487d4b60f97ab239a3b95684'
+sha256sums=('5c685d5472045d1dc62be22594114c1e21efb29ed32e2162dcfbaf1b436ff581'
             'SKIP')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
               '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>

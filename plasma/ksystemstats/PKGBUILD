@@ -27,7 +27,7 @@ optdepends=('libnl: network usage monitor'
 groups=(plasma)
 install=ksystemstats.install
 source=(https://download.kde.org/stable/plasma/$_dirver/$pkgname-$pkgver.tar.xz{,.sig})
-sha256sums=('d8c272a3242fe5d0937b9e3051b302335b30ebc3228e82d6549c12a4e5886fca'
+sha256sums=('b8036bee094f9a38f6966c1b84314f9c33b90583f739ce1d1dd38ae8d3e0e7af'
             'SKIP')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
               '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>

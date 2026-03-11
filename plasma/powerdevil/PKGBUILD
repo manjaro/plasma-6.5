@@ -46,7 +46,7 @@ optdepends=('kinfocenter: for the Energy Information KCM'
             'tlp: alternative power profiles support')
 groups=(plasma)
 source=(https://download.kde.org/stable/plasma/$_dirver/$pkgname-$pkgver.tar.xz{,.sig})
-sha256sums=('7cfeb08beb3cc44ac6ae525613cdf40855dd1137083b050dc5e65d3764cbf4cb'
+sha256sums=('6c0e5385a57589bd3792cbe5469f746f1df31b7da18dd7300ad32393ca8e4b4c'
             'SKIP')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
               '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>
