@@ -5,7 +5,7 @@
 pkgname=plasma-desktop
 pkgver=6.5.6
 _dirver=$(echo $pkgver | cut -d. -f1-3)
-pkgrel=1.0
+pkgrel=1.1
 pkgdesc='KDE Plasma Desktop'
 arch=(x86_64)
 url='https://kde.org/plasma-desktop/'
@@ -97,10 +97,12 @@ makedepends=(extra-cmake-modules
              xorg-server-devel)
 groups=(plasma)
 source=(https://download.kde.org/stable/plasma/$_dirver/$pkgname-$pkgver.tar.xz{,.sig}
-        https://invent.kde.org/plasma/plasma-desktop/-/commit/77f16105.patch)
+        https://invent.kde.org/plasma/plasma-desktop/-/commit/77f16105.patch
+        https://invent.kde.org/plasma/plasma-desktop/-/commit/df171436.patch)
 sha256sums=('024aa6e0878cb946928195e8db073fbaadd633705ec1dcb469a4d78fd3a01492'
             'SKIP'
-            'f3a1b25a36996e087fc2f6d8c929b3f0d892c035da69868f79bd92041edb6d51')
+            'f3a1b25a36996e087fc2f6d8c929b3f0d892c035da69868f79bd92041edb6d51'
+            '79a4f7113373f2a012e4461d84fb05d0ffd9fd259610a62afda061254851d374')
 validpgpkeys=('E0A3EB202F8E57528E13E72FD7574483BB57B18D'  # Jonathan Esk-Riddell <jr@jriddell.org>
               '0AAC775BB6437A8D9AF7A3ACFE0784117FBCE11D'  # Bhushan Shah <bshah@kde.org>
               'D07BD8662C56CB291B316EB2F5675605C74E02CF'  # David Edmundson <davidedmundson@kde.org>
@@ -110,6 +112,7 @@ prepare() {
   cd $pkgname-$pkgver
   # https://forum.manjaro.org/t/186510/99
   patch -p1 -i ../77f16105.patch
+  patch -p1 -i ../df171436.patch
 }
 
 build() {
